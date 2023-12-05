@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinesh Kanneboina Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b0e7e22061.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav class="topnav">
+        <img src="images/logo.png" class="logo">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#job">Work</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#extracurricular">Extracurriculars</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Aspiring Software Engineer</p>
+        <h1>Hi, my name is <br><span>Dinesh Kanneboina</span></h1>
+      </div>
+      <!-- <div class="cover-image">
+        <img src="images/face.JPG">
+      </div> -->
+    </div>
+  </div>
+  <!---------------about-------------------- -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/face.JPG">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>I am a senior at the University of Texas at Dallas studying Computer Science!
+            When I'm not coding a project or doing my school work, I enjoy traveling to new places
+            around the US and making sure to try out Thai food from local establishments.</p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+            <p class="tab-links" onclick="opentab('organizations')">Organizations</p>
+            <p class="tab-links" onclick="opentab('skills')"> Technical Skills</p>
+          </div>
+          <div class="tab-contents active-tab" id="education">
+            <ul>
+              <li><span>2020 - 2024</span><br><strong>The University of Texas at Dallas</strong><br>
+              Bachelors of Science in Computer Science<br>
+              Minor in Business Administration<br></li>
+              <li><span>Courses Completed</span><br>Discrete I/II, Linear Algebra, Computer Architecture, Software Engineering, UNIX, Probability & Statistics,
+                Programming Paradigms, Data Structures, Human Computer Interactions, Automata Theory, Operating Systems</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="organizations">
+            <ul>
+              <li><span>Extracurricular Clubs</span><br>Association of Computing Machinery (ACM) (Member)<br> Artificial Intelligence Society (AIS)
+                (Member)<br> Delta Epsilon Psi (President)<br> Aaja Nachle (Director)<br> Awaazein (Mixer Chair)<br> Dhadak (Mixer Chair)</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="skills">
+            <ul>
+              <li><span>Technical Languages</span><br>Java, C++, C#, Python, SQL, Assembly, JavaScript , HTML-CSS</li>
+              <li><span>Cloud Computing Services</span><br>Amazon Web Services Cloud Practitioner, Microsoft Azure</li>
+              <li><span>Developer Tools</span><br>XCode, Figma, SpringTools, GitBash/GitLab, Postman, SQuirrel SQL, DB2, Karate, MS Tools</li>
+              <li><span>Additional Technologies</span><br>Spring, Bitbucket, Docker, JIRA, PostgreSQL, Tensorflow, Linux, Express JS, React JS, Confluence, CRM</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!---------------work experience-------------------- -->
+
+  <div id="job">
+    <div class="container">
+      <h1 class="sub-title">My Work Experience</h1>
+      <div class="job-list">
+        <button type="button" class="collapsible">JP Morgan & Chase - Commercial Banking</button>
+        <div class="content">
+          <div>
+          <h2>Software Engineer Intern - <br> Plano, Texas</h2>
+          <h3>June 2023 ~ August 2023</h3>
+          <br>
+          <ul>
+            <li>Designed and developed a data parser tool which analyzes application text files and breaks down complex
+              design statements for a natural language processor to encapsulate behavior-driven architecture 80% more
+              efficiently</li><br>
+            <li>Created a PostgreSQL database which stores captured data in tables exhibiting inheritance. Data is
+              accessible through several REST endpoints to uniquely filter and display on a front-end webpage</li><br>
+            <li>Standardized 100% of component dependencies across all 128 Commercial Banking applications, conforming
+              to behavior-driven design principles</li><br>
+            <li>Collaborated with product managers, software developers and co-interns to establish product roadmap,
+              implement specifications and formulate architectural design plans, all while adhering to AGILE SDLC
+              practices</li>
+          </ul>
+        </div>
+        <div>
+          <img src="images/chase logo.png" class="job-logo">
+        </div>
+        </div>
+        <br>
+        <button type="button" class="collapsible">State Farm - Auto Insurance</button>
+        <div class="content">
+          <div>
+          <h2>Software Developer Intern - Richardson, Texas</h2>
+          <h3>May 2022 ~ May 2023</h3>
+          <br>
+          <ul>
+            <li>Increased customer satisfaction for 100k+ users by upgrading security and Swagger of backend API's on a
+              cross-functional 6 person team of developers, designers and data scientists</li><br>
+            <li>Identified bugs and reduced code vulnerabilities by 20% by repairing SNYK violations identified through
+              SPLUNK testing, quality assurance testing, and CI/CD Pipelining</li><br>
+            <li>Optimized API code to a success rate above 90% by assembling 10+ JUnit tests until the threshold was met
+            </li>
+          </ul>
+        </div>
+        <div>
+          <img src="images/statefarm logo.png" class="job-logo">
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!---------------services-------------------- -->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Design</h2>
+          <p>Publish clean and non buggy websites that complete the intended objective</p>
+          <!-- <a href="#">Learn more</a> -->
+        </div>
+
+        <div>
+          <i class="fa-brands fa-app-store"></i>
+          <h2>App Development</h2>
+          <p>Developing fun and engaging applications users can spend time on</p>
+          <!-- <a href="#">Learn more</a> -->
+        </div>
+
+        <div>
+          <i class="fa-brands fa-uikit"></i>
+          <h2>UI/UX Planning</h2>
+          <p>Effectively design and create eye-catching interfaces for users to enjoy</p>
+          <!-- <a href="#">Learn more</a> -->
+        </div>
+      </div>
+    </div>
+    <!---------------portfolio-------------------- -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/weather.jpeg">
+            <div class="layer">
+              <h2>Weather App</h2>
+              <p>Ideated an interactive website displaying the meteorological conditions of a user-inputted location in real time
+                  which pulls information from a public API and reorganized data into an intuitive user interface</p>
+              <a href="#" onclick="window.open('https://github.com/DineshKanneboina/github-slideshow')"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/eog.jpg.webp">
+            <div class="layer">
+              <h2>HackUTD Project 1</h2>
+              <p>Employed Python Pandas and NumPy to curate and conduct an in-depth analysis of a dataset containing over
+                15,000 data points for EOG, resulting in the ranking of optimal drill bits based on depth and material attributes</p>
+              <a href="#" onclick="window.open('https://github.com/ShehmirR/hackathon-eog-2023')"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/gas2.png">
+            <div class="layer">
+              <h2>HackUTD Project 2</h2>
+              <p>Project that displays the key functionalities of detecting gas leaks from a given location with user inputted data</p>
+              <a href="#" onclick="window.open('https://github.com/Prathmesh234/EOGGasProject/tree/main/project')"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+       <!-- <a href="#" class="btn">See more</a> -->
+      </div>
+    </div>
+    <!--------------My Extracurriculars-------------->
+    <div id="extracurricular">
+      <div class="container">
+        <h1 class="sub-title">My Extracurriculars</h1>
+        <div class="extracurricular-list">
+
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="images/depsi.png" style="width:300px;height:300px;">
+              </div>
+              <div class="flip-card-back">
+                <br>
+                <h2>Delta Epsilon Psi Fraternity Inc.</h2> 
+                <h3>President</h3><br>
+                <ul>
+                  <li>Initiated the organization's inaugural bank account and formalized its status as a 501(c)(3) nonprofit entity</li><br>
+                  <li>Spearheaded the planning and execution of 3 charitable service events, successfully raising $3,000 in support of the Juvenile Diabetes Research Foundation throughout the academic year</li><br>
+                  <li>Managed logistics for 4 cultural events, each with a $10,000 monetary constraint and 600+ attendees</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="images/an logo.png" style="width:400px;height:325px;">
+              </div>
+              <div class="flip-card-back">
+                <br>
+                <h2>Aaja Nachle Dance Competition</h2> 
+                <h3>Director</h3><br>
+                <ul>
+                  <li>Crafted and supervised an expansive weekend agenda for 8 dance teams and in excess of 60 board members, with meticulous hour-by-hour task prioritization</li><br>
+                  <li>Coordinated with dance teams from across the country in a 6-month timeline, overseeing weekend accommodations, practice facility bookings, and competition prop arrangements within a $30,000 budget</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!--------------contact-------------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fas fa-paper-plane"></i>dinesh.kanneboina@gmail.com</p>
+            <p><i class="fas fa-phone-square-alt"></i>224-532-1630</p>
+            <div class="social-icons">
+              <a href="#" onclick="window.open('https://www.instagram.com/dinesh.k_/?next=%2F')" ><i class="fab fa-instagram"></i></a>
+              <a href="#" onclick="window.open('https://www.linkedin.com/in/dineshkanneboina/')" ><i class="fab fa-linkedin"></i></a>
+            </div>
+            <a href="images/Dinesh_Kanneboina_Resume_2023_Fall.pdf" download class="btn btn2">Download Resume</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="Email" placeholder="Your Email" required>
+              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright Dinesh Kanneboina</p>
+      </div>
+    </div>
+
+    <script>
+
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycby1wSH-iVMGCYTVIj_61vYvGNXS1moYOo4d9J2B_HipQp4xQqhuMpWqzfjkJpihH9-6SQ/exec'
+      const form = document.forms['submit-to-google-sheet']
+
+      const mgs = document.getElementById("msg")
+
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+          .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function () {
+              msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+  
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight){
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      } 
+    });
+  }
+  </script>
+
+</body>
+
+</html>
